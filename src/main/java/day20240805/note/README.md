@@ -19,3 +19,8 @@
 - https://mvnrepository.com
 - - 这个网址可以获取更多第三方的 jar 包，其中就包含依赖
 - ![img_7.png](img_7.png)
+
+### 依赖也有依赖
+- ![img_8.png](img_8.png)
+- ![img_9.png](img_9.png)
+- - 当其他的依赖被获取后还需要某个依赖才能使用时，maven 会自动帮你获取对应依赖
