@@ -14,4 +14,8 @@
 - ![img_5.png](img_5.png)
 - - 自动化帮我们管理依赖
 - ![img_6.png](img_6.png)
-- 
+
+### 获取更多的依赖
+- https://mvnrepository.com
+- - 这个网址可以获取更多第三方的 jar 包，其中就包含依赖
+- ![img_7.png](img_7.png)
