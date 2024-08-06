@@ -25,4 +25,6 @@
 - ![img_7.png](img_7.png)
 - - 在 jar 包下载好后会放置在 .m2 包下
 - ![img_8.png](img_8.png)
-
+- - 有两种方式可以让别人去使用自己写的 jar 包
+- ![img_9.png](img_9.png)
+- ![img_10.png](img_10.png)
