@@ -1,4 +1,4 @@
-package day20240806;
+package day20240806.student_lombok;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package day20240806;
+package day20240806.student_lombok;
 
 public class StudentTest {
     public static void main(String[] args) {
