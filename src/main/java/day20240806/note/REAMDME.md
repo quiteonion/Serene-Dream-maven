@@ -21,4 +21,6 @@
 - ![img_5.png](img_5.png)
 - - 测试不通过会报错
 - ![img_6.png](img_6.png)
+- - 引入 JUnit 的好处
+- ![img_7.png](img_7.png)
 
