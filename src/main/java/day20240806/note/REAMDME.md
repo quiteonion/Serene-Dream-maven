@@ -11,4 +11,6 @@
 ## maven
 - - 创建一个测试代码
 - ![img_3.png](img_3.png)
+- - 快捷打包成 jar 包
+- ![img_2.png](img_2.png)
 
