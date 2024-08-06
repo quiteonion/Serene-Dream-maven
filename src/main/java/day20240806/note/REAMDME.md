@@ -7,3 +7,8 @@
 ## record
 - ![img_1.png](img_1.png)
 - - 官方提出的新修饰词，会在编译阶段自动帮我们补齐
+
+## maven
+- - 创建一个测试代码
+- ![img_3.png](img_3.png)
+
