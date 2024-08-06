@@ -23,4 +23,6 @@
 - ![img_6.png](img_6.png)
 - - 引入 JUnit 的好处
 - ![img_7.png](img_7.png)
+- - 在 jar 包下载好后会放置在 .m2 包下
+- ![img_8.png](img_8.png)
 
