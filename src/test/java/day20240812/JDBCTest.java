@@ -46,13 +46,29 @@ public class JDBCTest {
 
     @Test
     public void insert() throws SQLException {
-        String insert = "insert into user(name,balance) values(?,?)";
+        String insert = "insert into user(name,balance) values(?,?);";
         PreparedStatement preparedStatement = connection.prepareStatement(insert);
         preparedStatement.setString(1, "挽梦");
         preparedStatement.setInt(2, 100);
         preparedStatement.executeUpdate();
 
     }
+
+    @Test
+    public void batchInsert() throws SQLException {
+        String insertSql = "insert into user(name, balance) values(?, ?);";
+        PreparedStatement preparedStatement = connection.prepareStatement(insertSql);
+        preparedStatement.setString(1, "alex");
+        preparedStatement.setInt(2, 50);
+        preparedStatement.addBatch();
+
+        preparedStatement.setString(1, "bob");
+        preparedStatement.setInt(2, 30);
+        preparedStatement.addBatch();
+
+        preparedStatement.executeBatch();
+    }
+
 
 
     @BeforeAll
