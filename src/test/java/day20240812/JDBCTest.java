@@ -1,5 +1,6 @@
 package day20240812;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -23,7 +24,6 @@ public class JDBCTest {
             int balance = resultSet.getInt("balance");
             System.out.println(id + "-" + name + "-" + balance);
         }
-        connection.close();
     }
 
     @Test
@@ -41,15 +41,19 @@ public class JDBCTest {
             int balance = resultSet.getInt("balance");
             System.out.println(id + "-" + name + "-" + balance);
         }
-        connection.close();
     }
 
     @BeforeAll
-    private static void getConnection() throws SQLException {
+    public static void getConnection() throws SQLException {
         //获取连接
         String url = "jdbc:mysql://localhost:3306/demo01";
         String user = "root";
         String password = "lcw0909.";
          connection = DriverManager.getConnection(url, user, password);
+    }
+
+    @AfterAll
+    public static void closeConnection() throws SQLException {
+        connection.close();
     }
 }
