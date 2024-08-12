@@ -73,11 +73,18 @@ public class JDBCTest {
     public void update() throws SQLException {
         String updateSql = "update user set balance = balance + 5 where name = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(updateSql);
-        preparedStatement.setString(1,"阿呆");
+        preparedStatement.setString(1, "阿呆");
         preparedStatement.executeUpdate();
     }
 
+    @Test
+    public void delete() throws SQLException {
+        String updateSql = "delete from user where name = ?";
+        PreparedStatement pStmt = connection.prepareStatement(updateSql);
+        pStmt.setString(1, "阿呆");
+        pStmt.executeUpdate();
 
+    }
 
     @BeforeAll
 
