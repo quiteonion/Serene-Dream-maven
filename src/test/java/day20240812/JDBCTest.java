@@ -8,6 +8,7 @@ import java.sql.*;
 
 public class JDBCTest {
     static Connection connection;
+
     @Test
     public void testStatement() throws SQLException {
 
@@ -43,13 +44,24 @@ public class JDBCTest {
         }
     }
 
+    @Test
+    public void insert() throws SQLException {
+        String insert = "insert into user(name,balance) values(?,?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(insert);
+        preparedStatement.setString(1, "挽梦");
+        preparedStatement.setInt(2, 100);
+        preparedStatement.executeUpdate();
+
+    }
+
+
     @BeforeAll
     public static void getConnection() throws SQLException {
         //获取连接
         String url = "jdbc:mysql://localhost:3306/demo01";
         String user = "root";
         String password = "lcw0909.";
-         connection = DriverManager.getConnection(url, user, password);
+        connection = DriverManager.getConnection(url, user, password);
     }
 
     @AfterAll
