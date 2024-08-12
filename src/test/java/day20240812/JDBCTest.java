@@ -24,6 +24,7 @@ public class JDBCTest {
             int balance = resultSet.getInt("balance");
             System.out.println(id + "-" + name + "-" + balance);
         }
+        connection.close();
     }
 
     @Test
@@ -45,5 +46,6 @@ public class JDBCTest {
             int balance = resultSet.getInt("balance");
             System.out.println(id + "-" + name + "-" + balance);
         }
+        connection.close();
     }
 }
