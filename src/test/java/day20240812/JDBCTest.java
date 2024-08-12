@@ -69,9 +69,18 @@ public class JDBCTest {
         preparedStatement.executeBatch();
     }
 
+    @Test
+    public void update() throws SQLException {
+        String updateSql = "update user set balance = balance + 5 where name = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(updateSql);
+        preparedStatement.setString(1,"阿呆");
+        preparedStatement.executeUpdate();
+    }
+
 
 
     @BeforeAll
+
     public static void getConnection() throws SQLException {
         //获取连接
         String url = "jdbc:mysql://localhost:3306/demo01";
