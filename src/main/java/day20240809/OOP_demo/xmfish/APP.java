@@ -25,9 +25,9 @@ public class APP {
         List<URLContent> ls = ropository.getHtml(list);
         System.out.println("存入完成..." + url);
         //输出
-//        System.out.println("准备输出..." + url);
-//        Tificator tificator = new XMFishTificator();
-//        tificator.up(ls);
-//        System.out.println("结束输出..." + url);
+        System.out.println("准备输出..." + url);
+        Tificator tificator = new XMFishTificator();
+        tificator.up(ls);
+        System.out.println("结束输出..." + url);
     }
 }

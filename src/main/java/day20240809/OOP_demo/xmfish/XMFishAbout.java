@@ -1,11 +1,12 @@
 package day20240809.OOP_demo.xmfish;
 
 import lombok.Getter;
+@Getter
 
 public class XMFishAbout implements URLContent {
 
     private String quality;
-    @Getter
+
 
     private String content;
     private String url;
