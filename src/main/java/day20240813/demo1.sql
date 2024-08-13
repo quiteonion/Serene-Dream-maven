@@ -73,6 +73,30 @@ create table article
     updated_at varchar(100)    not null
 );
 
+show databases;
+
+use demo;
+
+show tables;
+
+select * from students;
+
+
+
+insert into students(user_name, password, gander, avatar, job, enrolled_at,  create_at) value ('Serene_Dream_挽梦', 'lcw0909.', 1, 'obito', null, '2023-08-31', now());
+
+select * from students;
+
+#修改 id = 1 的   什么东西
+update students set create_at = now() where id = 1;
+
+#删除 id = 4 的内容
+delete from students where id = 4;
+
+show create table students;
+
+#清空所有的表，包括 ID
+truncate table students;
 
 
 
