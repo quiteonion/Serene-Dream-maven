@@ -27,10 +27,6 @@ public class XMFishRopository extends Ropository {
             pStmt.setString(3, url);
             pStmt.setString(4, time);
             pStmt.executeUpdate();
-
-
-            System.out.println("=== === ===");
-
         }
         return list;
     }
