@@ -201,9 +201,6 @@ alter table student_id_card
 
 select * from student_id_card;
 
-alter table course
-    add constraint course_students_course_bool_fk
-        foreign key (`key`) references students (id);
 
 -- 【上面】动手练习时间 part3
 
